@@ -251,14 +251,18 @@ nav ul li ul#drop-down{
     background-color: var(--secondary-color);
     padding: 8px 20px;
     color: var(--text-color);
-    border-radius: 8px;
+    border-radius: 12px;
     text-decoration: none;
-    /* display: inline-block; */
-    transition: background 0.3s ease;
+    /*display: inline-block;
+    */transition: background 0.3s ease;
     font-weight: bold;
     border: solid 1px var(--secondary-color);
-
-    /* padding: 12px 24px; */
+    /*padding: 12px 24px;
+    */:;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
 
 .login-btn:hover {

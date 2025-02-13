@@ -74,7 +74,7 @@ h1 {
         <i class="fa-solid fa-bars fa-xl"></i>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html" class="active">Home</a></li>
                 <li><a href="./membership-apply.html">Apply</a></li>
                 <li><a href="./faqs.html">FAQs</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -325,29 +325,6 @@ h1 {
         </div>
     </footer>
 
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Select all navigation links
-        const navLinks = document.querySelectorAll('nav ul li a');
-
-        // Get the current page URL without query parameters
-        let currentUrl = window.location.pathname;
-        
-        // Ensure homepage works properly
-        if (currentUrl === "/" || currentUrl === "/index.html") {
-            currentUrl = "/index.html";  // Adjust this based on your file structure
-        }
-
-        navLinks.forEach(link => {
-            link.classList.remove('active'); // Remove 'active' from all links
-            
-            // Check if link's href matches the current URL exactly
-            if (link.getAttribute('href') === currentUrl) {
-                link.classList.add('active');
-            }
-        });
-    });
-</script>
 
 
     <script>

@@ -249,7 +249,7 @@ nav ul li ul#drop-down{
 .login-btn {
     display: none;
     background-color: var(--secondary-color);
-    padding: 12px 24px;
+    padding: 10px 20px;
     color: var(--text-color);
     border-radius: 8px;
     text-decoration: none;

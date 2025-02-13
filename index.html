@@ -325,25 +325,30 @@ h1 {
         </div>
     </footer>
 
-    <script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
         // Select all navigation links
         const navLinks = document.querySelectorAll('nav ul li a');
 
-        // Get the current page URL
-        const currentUrl = window.location.pathname;
+        // Get the current page URL without query parameters
+        let currentUrl = window.location.pathname;
+        
+        // Ensure homepage works properly
+        if (currentUrl === "/" || currentUrl === "/index.html") {
+            currentUrl = "/index.html";  // Adjust this based on your file structure
+        }
 
-        // Loop through each link to check if it matches the current URL
         navLinks.forEach(link => {
-            // Remove 'active' class from all links
-            link.classList.remove('active');
-
-            // If the link's href matches the current URL, add 'active' class
-            if (link.getAttribute('href').includes(currentUrl.split('/').pop())) {
+            link.classList.remove('active'); // Remove 'active' from all links
+            
+            // Check if link's href matches the current URL exactly
+            if (link.getAttribute('href') === currentUrl) {
                 link.classList.add('active');
             }
         });
+    });
+</script>
 
-    </script>
 
     <script>
         // Select the menu icon

@@ -1219,6 +1219,8 @@ footer {
     .loan-grid {
         grid-template-columns: 1fr;
     }
+    header {
+        padding: 0 30px;
 }
 
 @media only screen and (max-width: 900px){

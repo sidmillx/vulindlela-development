@@ -256,6 +256,8 @@ nav ul li ul#drop-down{
     transition: background 0.3s ease;
     font-weight: bold;
     border: solid 1px var(--secondary-color);
+
+    display: none;
     /* padding: 12px 24px; */
 }
 
@@ -353,6 +355,9 @@ nav ul li ul#drop-down{
 
 @media (max-width:768px){
 
+    .login-btn {
+        display: block;
+    }
     .hero {
         padding: 20px 5px;
         width: 100%;

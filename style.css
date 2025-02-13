@@ -1221,6 +1221,7 @@ footer {
     }
     header {
         padding: 0 30px;
+        border-bottom: solid 1px #fff;
 }
 
 @media only screen and (max-width: 900px){

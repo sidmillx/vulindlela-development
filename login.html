@@ -119,11 +119,6 @@ button:hover {
   }
 }
 
-@media (max-width: 768px){
-    .col-2 {
-        display: none;
-    }
-}
 
 .forgot-password {
   display: block;
@@ -161,6 +156,20 @@ button:hover {
 
 .dont-have-account {
     margin: 15px 0;
+}
+
+
+@media (max-width: 768px){
+    .col-2 {
+        display: none;
+    }
+    .main-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 85%;
+      margin: 0 auto;
+    }
+
 }
 
 

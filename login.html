@@ -119,6 +119,11 @@ button:hover {
   }
 }
 
+@media (max-width: 768px){
+    .col-2 {
+        display: none;
+    }
+}
 
 .forgot-password {
   display: block;
@@ -159,23 +164,10 @@ button:hover {
 }
 
 
-@media (max-width: 768px){
-    .col-2 {
-        display: none;
-    }
-    .main-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 85%;
-      margin: 0 auto;
-    }
-
-}
-
-
     </style>
 </head>
 <body>
+    <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
     <div class="main-container">
         <div class="container">
             <img src="../assets/profile_3135715.png" alt="" style="max-width: 150px;">

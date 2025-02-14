@@ -74,7 +74,7 @@ h1 {
         <i class="fa-solid fa-bars fa-xl"></i>
         <nav>
             <ul>
-                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./membership-apply.html">Apply</a></li>
                 <li><a href="./faqs.html">FAQs</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -83,8 +83,6 @@ h1 {
         <div class="phone">
             <a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> Call Us Now: +268 2404 2876</a>
         </div>
-
-        <button class="login-btn"><a href="./login.html">Login</a></button>
     </header>
 
     <section class="hero">
@@ -327,7 +325,25 @@ h1 {
         </div>
     </footer>
 
+    <script>
+        // Select all navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
 
+        // Get the current page URL
+        const currentUrl = window.location.pathname;
+
+        // Loop through each link to check if it matches the current URL
+        navLinks.forEach(link => {
+            // Remove 'active' class from all links
+            link.classList.remove('active');
+
+            // If the link's href matches the current URL, add 'active' class
+            if (link.getAttribute('href').includes(currentUrl.split('/').pop())) {
+                link.classList.add('active');
+            }
+        });
+
+    </script>
 
     <script>
         // Select the menu icon
